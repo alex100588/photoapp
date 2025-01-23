@@ -1,14 +1,18 @@
 import Title from "./components/title.mjs";
 import PhotoGrid from "./components/photogrid.mjs";
 import DataHandler from "./components/dataHandler.mjs";
+import SinglePhoto from "./components/singlePhoto.mjs";
+import Router from "./components/router.mjs";
 
 class App {
-  constructor(){
-    this.data = []
+  constructor() {
+    console.log(Router.instance);
+
+    this.data = [];
   }
-  
+
   async render(container) {
-    this.data = await DataHandler.fetchData()
+    this.data = await DataHandler.fetchData();
 
     const main = document.createElement("main");
     const documentFragment = document.createDocumentFragment();
