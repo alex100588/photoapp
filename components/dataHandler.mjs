@@ -1,13 +1,45 @@
 export default class DataHandler {
-  static async fetchData() {
+  static $instance = null;
+
+  storeInStorage(data) {
+    window.sessionStorage.setItem("data", JSON.stringify(data));
+  }
+
+  retrieveFromStorage() {
+    const data = window.sessionStorage.getItem("data");
+
+    if (data) {
+      return JSON.parse(data);
+    }
+
+    return null;
+  }
+
+  async fetchData() {
     try {
-      const response = await fetch("data.json");
-      const data = await response.json();
-      // console.log(data);
+      let data = this.retrieveFromStorage();
+
+      if (data) {
+        return data;
+      }
+
+      const res = await fetch("data.json");
+
+      data = await res.json();
+
+      this.storeInStorage(data);
 
       return data;
-    } catch (error) {
-      console.log("Error", error);
+    } catch (err) {
+      console.log("Error", err);
     }
+  }
+
+  static get instance() {
+    if (DataHandler.$instance === null) {
+      DataHandler.$instance = new DataHandler();
+    }
+
+    return DataHandler.$instance;
   }
 }

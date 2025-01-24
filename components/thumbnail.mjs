@@ -1,10 +1,10 @@
+// Importarea clasei Router
 import Router from "./router.mjs";
 
 export default class Thumbnail {
   constructor(props) {
     this.props = props;
-
-    document.addEventListener(
+    document.querySelector('body').addEventListener(
       "click",
       (e) =>
         e.target &&
@@ -16,22 +16,22 @@ export default class Thumbnail {
   onLinkClicked(e) {
     e.preventDefault();
     e.stopImmediatePropagation();
-    Router.instance.pushHistory(e.target.dataset.link);
-  }
 
-  //componenta care trimite o singura imagine pentru container de la care se multiplica celelalte
+    const { title, link } = e.target.dataset;
+
+    Router.instance.pushHistory({ title, link });
+  }
 
   render() {
     return `
-        <div class="thumbnail">
-          <img src="${this.props.srcThumbnail}" alt="lamai">
-          <div class="caption">
-            <h3>${this.props.title}</h3>
-            <p>${this.props.shortDesc}</p>
-            <button data-link="/single-photo?id=${this.props.id}" 
-        " class="btn btn-primary link-button" role="button">See more</button>
+      <div class="thumbnail">
+        <img src="${this.props.srcThumbnail}" alt="lamai">
+        <div class="caption">
+          <h3>${this.props.title}</h3>
+          <p>${this.props.shortDesc}</p>
+          <button data-title="${this.props.title}" data-link="/single-photo?id=${this.props.id}" class="btn btn-primary link-button" role="button">See more</button>
         </div>
       </div>
-  `;
+    `;
   }
 }

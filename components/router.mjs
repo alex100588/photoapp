@@ -2,15 +2,28 @@ export default class Router {
   static $instance = null;
 
   constructor() {
-    window.addEventListener("popstate", this.onHistoryChange, false);
+    this.listeners = [];
+
+    window.addEventListener("popstate", this.onHistoryChange.bind(this), false);
   }
 
-  pushHistory(link) {
-    history.pushState({}, null, link);
+  subscribe(listener) {
+    this.listeners.push(listener);
   }
-  // event pe browser cand schimbam url-ul
+
+  notifyListeners(state) {
+    this.listeners.forEach((listener) => listener(state));
+  }
+
+  pushHistory(state) {
+
+    history.pushState(state, state.title, state.link);
+
+    this.notifyListeners(state);
+  }
+
   onHistoryChange(event) {
-    console.log(event);
+    this.notifyListeners(event.state);
   }
 
   static get instance() {
