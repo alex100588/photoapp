@@ -4,13 +4,15 @@ import Router from "./router.mjs";
 export default class Thumbnail {
   constructor(props) {
     this.props = props;
-    document.querySelector('body').addEventListener(
-      "click",
-      (e) =>
-        e.target &&
-        e.target.classList.contains("link-button") &&
-        this.onLinkClicked(e)
-    );
+    document
+      .querySelector("body")
+      .addEventListener(
+        "click",
+        (e) =>
+          e.target &&
+          e.target.classList.contains("link-button") &&
+          this.onLinkClicked(e)
+      );
   }
 
   onLinkClicked(e) {
@@ -25,7 +27,7 @@ export default class Thumbnail {
   render() {
     return `
       <div class="thumbnail">
-        <img src="${this.props.srcThumbnail}" alt="lamai">
+        <img class="image" src="${this.props.srcThumbnail}" alt="lamai">
         <div class="caption">
           <h3>${this.props.title}</h3>
           <p>${this.props.shortDesc}</p>

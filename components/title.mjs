@@ -3,8 +3,8 @@ import Router from "../components/router.mjs";
 
 export default class Title {
   constructor() {
-    this.heading = "Galeria mea foto!";
-    this.subHeading = "Aceasta este galeria mea foto";
+    this.heading = "My Galaxy Gallery!";
+    this.subHeading = "This are some photos from space";
 
     document.addEventListener(
       "click",

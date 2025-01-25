@@ -1,0 +1,14 @@
+.image {
+  height: 20rem !important;
+}
+
+.title-link {
+  background: #f1f9f1;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1300px) {
+  .remove-padding {
+    padding: 1rem !important;
+  }
+}

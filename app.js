@@ -9,6 +9,7 @@ class App {
     this.data = null;
 
     Router.instance.subscribe(this.onRouteChanged.bind(this));
+    document.cookie = 'myCookie=test'
   }
 
   cleanApp() {

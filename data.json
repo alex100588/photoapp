@@ -1,49 +1,49 @@
 [
   {
     "id": 11,
-    "srcThumbnail": "media/kermit.jpg",
-    "srcImage": "media/img.jpg",
-    "title": "Fotografie cu lamai",
+    "srcThumbnail": "media/earth.jpg",
+    "srcImage": "media/earth.jpg",
+    "title": "Earth from far the galaxy",
     "shortDesc": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
     "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
   },
   {
     "id": 22,
-    "srcThumbnail": "media/kermit.jpeg",
-    "srcImage": "media/img.jpg",
-    "title": "Fotografie cu lamai",
+    "srcThumbnail": "media/futuristic-7868625_1280.jpg",
+    "srcImage": "media/futuristic-7868625_1280.jpg",
+    "title": "Fouturistic style",
     "shortDesc": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
     "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
   },
   {
     "id": 33,
-    "srcThumbnail": "media/kermit.jpeg",
-    "srcImage": "media/img.jpg",
-    "title": "Fotografie cu lamai",
+    "srcThumbnail": "media/saturn-54999_640.jpg",
+    "srcImage": "media/saturn-54999_640.jpg",
+    "title": "Saturn from space",
     "shortDesc": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
     "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
   },
   {
     "id": 44,
-    "srcThumbnail": "media/kermit.jpeg",
-    "srcImage": "media/img.jpg",
-    "title": "Fotografie cu lamai",
+    "srcThumbnail": "media/space-1548139_1280.jpg",
+    "srcImage": "media/space-1548139_1280.jpg",
+    "title": "Our planet Earth",
     "shortDesc": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
     "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
   },
   {
     "id": 55,
-    "srcThumbnail": "media/kermit.jpeg",
-    "srcImage": "media/img.jpg",
-    "title": "Fotografie cu lamai",
+    "srcThumbnail": "media/universe-4609408_1280.jpg",
+    "srcImage": "media/universe-4609408_1280.jpg",
+    "title": "Planet from Universe",
     "shortDesc": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
     "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
   },
   {
     "id": 66,
-    "srcThumbnail": "media/kermit.jpeg",
-    "srcImage": "media/img.jpg",
-    "title": "Fotografie cu lamai",
+    "srcThumbnail": "media/solar-system-11111_1280.jpg",
+    "srcImage": "media/solar-system-11111_1280.jpg",
+    "title": "Just another planet",
     "shortDesc": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
     "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
   }

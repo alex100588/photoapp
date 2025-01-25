@@ -15,7 +15,7 @@ export default class PhotoGrid {
 
     this.thumbnails.forEach(
       (thumbnail) =>
-        (thumbnailsHTML += `<div class="col-md-4 col-xs-6">${thumbnail.render()}</div>`)
+        (thumbnailsHTML += `<div class="col-md-4 col-sm-6 remove-padding">${thumbnail.render()}</div>`)
     );
 
     return thumbnailsHTML;
@@ -25,7 +25,6 @@ export default class PhotoGrid {
     if (this.thumbnails.length > 0) {
       return;
     }
-
 
     this.data.forEach((thumbnail) =>
       this.thumbnails.push(new Thumbnail(thumbnail))
