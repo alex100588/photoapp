@@ -7,12 +7,12 @@ export default class SinglePhoto {
     return `
         <div class="container">
           <div class="row">
-            <div class="col-md-8 col-xs-8">
+            <div class="col-md-8 col-xs-8 mobile">
               <figure class="figure">
                 <img src="${this.props.srcImage}" class="figure-img" width="100%">
               </figure>
             </div>
-            <div class="col-md-3 offset-md-1 col-xs-3 offset-xs-1">
+            <div class="col-md-3 offset-md-1 col-xs-3 offset-xs-1 mobile">
               ${this.props.desc}
             </div>
           </div>

@@ -11,4 +11,12 @@
   .remove-padding {
     padding: 1rem !important;
   }
+  .row{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile{
+    width: 100%!important;
+  }
 }
